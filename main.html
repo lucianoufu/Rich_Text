@@ -6,9 +6,23 @@
     <title>Rich text</title>
 </head>
 <body>
-    <h1>Style</h1>
-    <textarea id="TextAreaId" onchange=mudaTexto()></textarea>
-    <p id = "Text">Teste</p>
+    <div class="container">
+        <h1>Style</h1>
+        <textarea id="TextAreaId" onchange=mudaTexto()></textarea>
+    </div>
+
+    <div class="navbar">
+        <div class="container">
+            <button><b>N</b></button>
+            <button><i>I</i></button>
+            <button><u>S</u></button>
+            <button>Mudar cor</button>
+        </div>
+    </div>
+    <div class="container">
+        <p id = "Text">Teste</p>
+        <button onclick=mudaEstiloTexto()>Enviar selecionado</button>
+    </div>
     <script src = "main.js"></script>
 </body>
 </html>
