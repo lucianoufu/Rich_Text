@@ -7,25 +7,34 @@
 </head>
 <body>
     <div class="container">
+        <i class="fas fa-file-alt fa-2x"></i>
         <h1>Rich text</h1>
         <textarea id="TextAreaId" onchange=mudaTexto()></textarea>
     </div>
 
     <div class="navbar">
         <div class="container">
-            <button onclick="fn_muda_estilo_texto('t')"><b>T</b></button>
-            <button onclick="fn_muda_estilo_texto('b')"><b>N</b></button>
-            <button onclick="fn_muda_estilo_texto('i')"><i>I</i></button>
-            <button onclick="fn_muda_estilo_texto('u')"><u>U</u></button>
-            <button onclick="fn_muda_estilo_texto('a')">{-}</button>
-            <button onclick="fn_muda_estilo_texto('s')">S</button>
-            <button onclick="fn_muda_estilo_texto('c')">Mudar cor</button>
+            <button onclick="fn_muda_estilo_texto('t', null)"><b>T</b></button>
+            <button onclick="fn_muda_estilo_texto('b', null)"><b>N</b></button>
+            <button onclick="fn_muda_estilo_texto('i', null)"><i>I</i></button>
+            <button onclick="fn_muda_estilo_texto('u', null)"><u>U</u></button>
+            <button onclick="fn_muda_estilo_texto('a', null)"><i class="fas fa-link"></i></button>
+            <button onclick="fn_muda_estilo_texto('s', null)"><i class="fas fa-star-half-alt"></i></button>
+            <select id="mySelect" onchange="color_selected()">
+                <option value="">Select a color</option>
+                <option value="yellow">yellow</option>
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="pink">pink</option>
+            </select>
         </div>
     </div>
     <div class="container">
-        <p id = "Text">O texto digitado acima aparecerá aqui :)</p>
-        <button onclick=mudaEstiloTexto()>Enviar selecionado</button>
+        <p id = "Text">the text digit above will be apper here. Have fun :)</p>
+        <!-- <button onclick=mudaEstiloTexto()>Enviar selecionado</button> -->
     </div>
     <script src = "main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
