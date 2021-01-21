@@ -7,20 +7,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Style</h1>
+        <h1>Rich text</h1>
         <textarea id="TextAreaId" onchange=mudaTexto()></textarea>
     </div>
 
     <div class="navbar">
         <div class="container">
-            <button><b>N</b></button>
-            <button><i>I</i></button>
-            <button><u>S</u></button>
-            <button>Mudar cor</button>
+            <button onclick="fn_muda_estilo_texto('t')"><b>T</b></button>
+            <button onclick="fn_muda_estilo_texto('b')"><b>N</b></button>
+            <button onclick="fn_muda_estilo_texto('i')"><i>I</i></button>
+            <button onclick="fn_muda_estilo_texto('u')"><u>U</u></button>
+            <button onclick="fn_muda_estilo_texto('a')">{-}</button>
+            <button onclick="fn_muda_estilo_texto('s')">S</button>
+            <button onclick="fn_muda_estilo_texto('c')">Mudar cor</button>
         </div>
     </div>
     <div class="container">
-        <p id = "Text">Teste</p>
+        <p id = "Text">O texto digitado acima aparecerá aqui :)</p>
         <button onclick=mudaEstiloTexto()>Enviar selecionado</button>
     </div>
     <script src = "main.js"></script>

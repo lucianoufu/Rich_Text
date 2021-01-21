@@ -9,10 +9,17 @@
     margin: 0 auto;
 }
 
-h1{
+h1, h2{
     color: #2a6099;
+}
+
+h1{
     padding-bottom: 20px;
 }
+
+/* h2{ */
+/*     margin: 6px 0px; */
+/* } */
 
 textarea{
     margin-bottom: 20px;
@@ -58,4 +65,12 @@ button:hover{
 
 textarea{
     padding: 5px;
+}
+
+.specialArea{
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 5px;
+    background: #b4c7dc;
+    border-left: 5px solid #2a6099;
 }
