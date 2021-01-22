@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href = "style.css">
@@ -9,24 +9,24 @@
     <div class="container">
         <i class="fas fa-file-alt fa-2x"></i>
         <h1>Rich text</h1>
-        <textarea id="TextAreaId" onchange=mudaTexto()></textarea>
+        <textarea id="TextAreaId" onchange=change_text()></textarea>
     </div>
 
     <div class="navbar">
         <div class="container">
-            <button onclick="fn_muda_estilo_texto('t', null)"><b>T</b></button>
-            <button onclick="fn_muda_estilo_texto('b', null)"><b>N</b></button>
-            <button onclick="fn_muda_estilo_texto('i', null)"><i>I</i></button>
-            <button onclick="fn_muda_estilo_texto('u', null)"><u>U</u></button>
-            <button onclick="fn_muda_estilo_texto('a', null)"><i class="fas fa-link"></i></button>
-            <button onclick="fn_muda_estilo_texto('s', null)"><i class="fas fa-star-half-alt"></i></button>
+            <button onclick="fn_change_text_style('t', null)"><b>T</b></button>
+            <button onclick="fn_change_text_style('b', null)"><b>N</b></button>
+            <button onclick="fn_change_text_style('i', null)"><i>I</i></button>
+            <button onclick="fn_change_text_style('u', null)"><u>U</u></button>
+            <button onclick="fn_change_text_style('a', null)"><i class="fas fa-link"></i></button>
+            <button onclick="fn_change_text_style('s', null)"><i class="fas fa-star-half-alt"></i></button>
             <select id="mySelect" onchange="color_selected()">
                 <option value="">Select a color</option>
-                <option value="yellow">yellow</option>
-                <option value="blue">blue</option>
-                <option value="red">red</option>
-                <option value="green">green</option>
-                <option value="pink">pink</option>
+                <option value="orange">Orange</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
             </select>
         </div>
     </div>
