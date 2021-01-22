@@ -1,10 +1,34 @@
-function change_text(){
+/*
+    * fn_show_text -- Change the paragraph of the HTML with the text that the user type on the textbox.
+    * 
+    * 
+    * Parameters:
+    * It does not take any parameters,  only uses the DOM propriety to change the HTML file.
+    * 
+    * 
+    * Returns:
+    * None. All changes are made inside of the function.
+*/
+
+function fn_show_text(){
     var textId = document.getElementById("TextAreaId").value;
     console.log(textId);
     var paragraph = document.getElementById("Text");
     paragraph.innerText = textId;
 
 }
+
+/*
+    * fn_change_text_style -- Change the style of the text in the HTML file.
+    *
+    * Parameters:
+    * format -- Type of the format of the text.
+    * color -- Color of the text.
+    * 
+    * 
+    * Returs:
+    * None. All changes are made inside the function.
+*/
 
 function fn_change_text_style(format, color){
     var selected_text = document.getSelection();
@@ -41,6 +65,17 @@ function fn_change_text_style(format, color){
         textHTMLY.innerHTML = textHTMLY.innerHTML.replace(selected_text, `<${format}>${selected_text}</${format}>`);
     }   
 }
+
+/*
+    * fn_color_selectd -- Get the color selected by the user in the "select" tag.
+    * 
+    * 
+    * Parameters:
+    * It does not take any parameters, it only use the DOM propriety to change the HTML file.
+    * 
+    * Returns:
+    * None, instead call the function fn_change_text_style with the color specified by the user.
+*/
 
 function color_selected(){
     var color = document.getElementById("mySelect").value;
